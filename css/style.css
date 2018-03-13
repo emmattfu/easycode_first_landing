@@ -195,12 +195,14 @@ blockquote span,
 	text-transform: uppercase;
 	text-indent: 1.7em;	
 }
-.inner h3 {
+.inner .inner-text {
 	font-family: 'Open sans', serif;
 	font-weight: 300;
 	font-size: 19px;
 	color: #c1c1c1;
-	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 200px;
+	display: inline-block;
 }
 
 /* ==== Custom styles end ==== */
