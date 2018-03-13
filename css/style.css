@@ -139,6 +139,7 @@ blockquote span,
 }
 
 .btn {
+	font-family: "Open sans" serif;
 	display: inline-block;
 	padding: 12px 20px;
 	border-radius: 2px;
