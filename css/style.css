@@ -71,6 +71,7 @@ blockquote {
 }
 .header .header-nav {
 	float: right;
+	line-height: 25px;
 }
 .header .header-nav li {
 	float: left;
