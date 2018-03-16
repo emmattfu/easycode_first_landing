@@ -45,6 +45,9 @@ blockquote {
 .text-center {
 	text-align: center;
 }
+.text-left {
+	text-align: left;
+}
 .text-right {
 	text-align: right;
 }
@@ -120,6 +123,11 @@ blockquote {
 	margin-bottom: 20px;
 	font-weight: 300;
 }
+.title.section-title-small{
+    font-size: 14px;
+    letter-spacing: .4em;
+    margin-bottom: 35px;
+}
 .default-text {
 	font-size: 15px;
 	line-height: 1.7333;
@@ -171,6 +179,12 @@ blockquote span,
 .btn.btn-xs {
 	padding: 7px 15px;
 	font-size: 11px;
+}
+.et-line {
+    font-size: 48px;
+    color: #111;
+	margin-bottom: 35px;
+	text-align: center;
 }
 /* ==== Default components end ==== */
 
@@ -232,6 +246,25 @@ blockquote span,
 .team-item .team-item-info .team-item-role {
 	font-size: 12px;
 }
+.team-item .team-item-img {
+	position: relative;
+}
+.team-item .team-item-skills {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: all .2s linear;
+}
+.team-item .team-item-img:hover .team-item-skills {
+	opacity: 1;
+}
 /* ---- About studio end ---- */
+
+.cause p {
+	padding-bottom: 85px;
+}
 
 /* ==== Custom styles end ==== */
