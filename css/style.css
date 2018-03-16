@@ -263,8 +263,47 @@ blockquote span,
 }
 /* ---- About studio end ---- */
 
+/* ---- Why choose us ---- */
 .cause p {
 	padding-bottom: 85px;
 }
+/* ---- Why choose us end ---- */
+
+/* ---- Latest news ---- */
+.news {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+}
+.news-title {
+	color: #777;
+	font-size: 15px;
+	letter-spacing: .2em;
+	margin-bottom: 17px;
+}
+.news-author {
+	font-size: 11px;
+	color: #999999;
+	letter-spacing: .4em;
+	margin-bottom: 25px;
+}
+.news-text {
+	margin-bottom: 30px;
+}
+.news-img {
+	filter: grayscale(100%);
+	margin-bottom: 30px;
+}
+.news-img:hover {
+	filter: grayscale(0);
+}
+.latest-news a {
+	font-family: 'Dosis', sans-serif;
+	float: right;
+	font-size: 11px;
+	color: #999999;
+	letter-spacing: .4em;
+	line-height: 35px;
+}
+/* ---- Latest news end ---- */
 
 /* ==== Custom styles end ==== */
