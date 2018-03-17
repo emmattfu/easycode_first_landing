@@ -264,8 +264,8 @@ blockquote span,
 /* ---- About studio end ---- */
 
 /* ---- Why choose us ---- */
-.cause p {
-	padding-bottom: 85px;
+.causes .row + .row {
+	margin-top: 85px;
 }
 /* ---- Why choose us end ---- */
 
