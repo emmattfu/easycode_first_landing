@@ -2,13 +2,16 @@
 *{
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 body{
 	margin: 0;
 	font: 300 15px/1 'Open Sans', sans-serif;
 	background-color: #fff;
 	color: #777;
 }
-h1, h2, h3, h4, h5, h6, {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: normal;
 }
@@ -30,12 +33,22 @@ ul, ol{
 img {
 	max-width: 100%;
 }
+input,
+textarea,
 button {
 	outline: none;
 	border: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+input[type="submit"] {
 	cursor: pointer;
 }
-
+textarea {
+	resize: vertical;
+}
 blockquote {
 	margin: 0;
 }
@@ -60,6 +73,9 @@ blockquote {
 .bg-grey {
 	background-color: #f8f8f8;
 }
+.text-uppercase {
+	text-transform: uppercase;
+}
 /* ==== Default classes end ==== */
 
 /* ==== Default components start ==== */
@@ -68,6 +84,8 @@ blockquote {
 	padding: 25px 0;
 	width: 100%;
 	z-index: 99;
+	top: 0;
+	left: 0;
 }
 .header .header-logo {
 	float: left;
@@ -149,7 +167,7 @@ blockquote span,
 }
 
 .btn {
-	font-family: "Open sans" serif;
+	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
 	padding: 12px 20px;
 	border-radius: 2px;
@@ -180,13 +198,63 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 11px;
 }
+.btn[disabled] {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus {
+	border-color: #111;
+}
+textarea.form-control {
+	min-height: 82px;
+	padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled {
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error {
+	border-color: #f57e7e; 
+}
 .et-line {
     font-size: 48px;
     color: #111;
 	margin-bottom: 35px;
 	text-align: center;
 }
+.font-dosis {
+	font-family: 'Dosis' ;
+}
+.form-info {
+	font-size: 11px;
+	color: #aaa;
+	font-weight: 400;
+}
+.form-info .fa {
+	font-size: 12px;
+}
 /* ==== Default components end ==== */
+
+/* ==== Guide styles start ==== */
+.guide-section form .form-control {
+	margin-bottom: 10px;
+}
+/* ==== Guide styles end ==== */
 
 /* ==== Custom styles start ==== */
 /* ---- Inner ---- */
@@ -207,7 +275,7 @@ blockquote span,
 	vertical-align: middle;
 }
 .inner h1 {
-	font-family: 'Dosis', serif;
+	font-family: 'Dosis', sans-serif;
 	font-size: 30px;
 	color: #f6f6f6;
 	letter-spacing: 1.7em;
@@ -216,7 +284,7 @@ blockquote span,
 	text-indent: 1.7em;	
 }
 .inner .inner-text {
-	font-family: 'Open sans', serif;
+	font-family: 'Open sans', sans-serif;
 	font-weight: 300;
 	font-size: 19px;
 	color: rgba(255, 255, 255, .75);
@@ -227,6 +295,9 @@ blockquote span,
 /* ---- Inner end ---- */
 
 /* ---- About studio ---- */
+.about-studio {
+	border-bottom: 2px solid rgba(8, 8, 8, .08);	
+}
 .team-item .team-item-img img {
 	filter: grayscale(100%);
 }
@@ -263,6 +334,109 @@ blockquote span,
 }
 /* ---- About studio end ---- */
 
+/* ---- Services ---- */
+.tabs-wrapper:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	margin-bottom: 80px;
+	opacity: .5;
+}
+#tabs .tabs-nav li.ui-state-active {
+	opacity: 1;
+}
+#tabs .tabs-nav li span {
+	display: block;
+}
+
+/* ---- Services end ---- */
+
+/* ---- Lets talk ---- */
+.lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk-content p {
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+}
+.lets-talk-content .btn-default {
+	background-color: rgba(255, 255, 255, .8);
+	font-size: 14px;
+	letter-spacing: .2em;
+	color: #111;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/* ---- Lets talk end ---- */
+
+/* ---- Portfolio ----- */
+.portfolio {
+	overflow: hidden;
+	padding-bottom: 7px;
+	position: relative;	
+}
+.portfolio-content p {
+	max-width: 760px;
+	margin: auto;
+	margin-bottom: 85px;
+}
+.portfolio-tabs-nav {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%) translateY(-30%);;
+}
+.portfolio-tabs-nav li {
+	display: inline-block;
+}
+#portfolio-tabs .portfolio-tabs-nav li {
+	font-family: 'Dosis', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	color: #111;
+	opacity: .5;
+	margin-bottom: 50px;
+} 
+#portfolio-tabs .portfolio-tabs-nav li + li {
+	margin-left: 67px;
+}
+#portfolio-tabs .portfolio-tabs-nav li.ui-state-active {
+	opacity: 1;
+}
+.portfolio-item {
+	float: left;
+	width: 33.333333333%;
+	padding: 0 3px;
+}
+.portfolio-item img {
+	width: 100%;
+	filter: grayscale(100%);
+}
+.portfolio-item img:hover {
+	filter: grayscale(0);
+}
+/* ---- Portfolio end ---- */
+
+/* ---- Creative works ---- */
+.creative-works .btn-default {
+	background-color: rgba(255, 255, 255, .8);
+	font-size: 14px;
+	letter-spacing: .2em;
+	color: #111;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/* ---- Creative works end ---- */
+
+
 /* ---- Why choose us ---- */
 .causes .row + .row {
 	margin-top: 85px;
@@ -296,7 +470,7 @@ blockquote span,
 .news-img:hover {
 	filter: grayscale(0);
 }
-.latest-news a {
+.latest-news .blog {
 	font-family: 'Dosis', sans-serif;
 	float: right;
 	font-size: 11px;
@@ -306,4 +480,13 @@ blockquote span,
 }
 /* ---- Latest news end ---- */
 
+/* ---- Subscribe ---- */
+
+/* ---- Subscribe end ---- */
+.subscribe form .form-control {
+	max-width: 290px;
+}
+.subscribe .form-info {
+	margin-top: 17px;
+}
 /* ==== Custom styles end ==== */
