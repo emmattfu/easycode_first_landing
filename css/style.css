@@ -237,7 +237,7 @@ textarea.form-control {
 	text-align: center;
 }
 .font-dosis {
-	font-family: 'Dosis' ;
+	font-family: 'Dosis';
 }
 .form-info {
 	font-size: 11px;
@@ -341,19 +341,29 @@ textarea.form-control {
     display: table;
     clear: both;
 }
+.tabs-nav {
+	overflow: hidden;
+	margin-bottom: 75px;
+}
+.tabs-nav-name {
+	font-size: 14px;
+	letter-spacing: .4em;
+}
 #tabs .tabs-nav li {
 	float: left;
 	width: 20%;
-	margin-bottom: 80px;
 	opacity: .5;
+	color: #111;
 }
 #tabs .tabs-nav li.ui-state-active {
 	opacity: 1;
 }
 #tabs .tabs-nav li span {
 	display: block;
+}	
+.tabs-nav li span + span {
+	margin-top: 20px;
 }
-
 /* ---- Services end ---- */
 
 /* ---- Lets talk ---- */
@@ -470,15 +480,30 @@ textarea.form-control {
 .slick-arrow {
 	background-color: #fff;
 }
-.reviews-carousel .slick-dots {
-	background-color: #fff;
+.slick-dots {
+	display: none;
 	position: absolute;
 	width: 100%;
 	bottom: 30px;
 	text-align: center;
 }
-.reviews-carousel .slick-dots li {
+.slick-dots li {
 	display: inline-block;
+	background-color: #fff;
+	width: 9px;
+	height: 9px;
+	border: 1px solid #111;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active {
+	background-color: #111;
+	border: 1px solid #fff;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li button {
+	display: none;
 }
 /* ---- Reviews-carousel end ---- */
 
@@ -529,3 +554,13 @@ textarea.form-control {
 	margin-top: 17px;
 }
 /* ==== Custom styles end ==== */
+
+/* ---- Footer ---- */
+.footer {
+	background-color: #f8f8f8;
+}
+.footer .footer-logo {
+	padding-top: 140px;
+	margin-bottom: 24px;
+}
+/* ---- Footer end ---- */
