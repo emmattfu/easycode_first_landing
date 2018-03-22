@@ -441,6 +441,47 @@ textarea.form-control {
 }
 /* ---- Why choose us end ---- */
 
+/* ---- Reviews carousel ---- */
+.reviews-carousel {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+.reviews .et-line {
+	color: #fff;
+	font-size: 32px;
+	display: block;
+	margin-bottom: 25px;
+}
+.reviews-content .reviews-text {
+	font-size: 18px;
+	color: rgba(255, 255, 255, .75);
+	line-height: 1.66em;
+	max-width: 735px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+.reviews-content .reviews-author {
+	font-size: 11px;
+	color: rgba(255, 255, 255, .3);
+}
+.reviews-carousel {
+	position: relative;
+}
+.slick-arrow {
+	background-color: #fff;
+}
+.reviews-carousel .slick-dots {
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	text-align: center;
+}
+.reviews-carousel .slick-dots li {
+	display: inline-block;
+}
+/* ---- Reviews-carousel end ---- */
+
 /* ---- Latest news ---- */
 .news {
 	font-family: 'Dosis', sans-serif;
