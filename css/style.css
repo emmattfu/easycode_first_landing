@@ -76,6 +76,11 @@ blockquote {
 .text-uppercase {
 	text-transform: uppercase;
 }
+.m-auto {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
 /* ==== Default classes end ==== */
 
 /* ==== Default components start ==== */
@@ -247,6 +252,34 @@ textarea.form-control {
 .form-info .fa {
 	font-size: 12px;
 }
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-transform: uppercase;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+	text-align: center;
+}
+.rhomb-icon i {
+	transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;	
+}
+.rhomb-icon.transparent-icon {
+	background-color: none;
+	border: 2px	solid #2f2f2f;
+	border-radius: 2px;
+	color: #111;
+	width: 21px;
+	height: 21px;
+	line-height: 19px;
+}
+
 /* ==== Default components end ==== */
 
 /* ==== Guide styles start ==== */
@@ -453,8 +486,9 @@ textarea.form-control {
 
 /* ---- Reviews carousel ---- */
 .reviews-carousel {
-	padding-top: 140px;
-	padding-bottom: 140px;
+	padding-top: 135px;
+	padding-bottom: 135px;
+	overflow: hidden;
 }
 .reviews .et-line {
 	color: #fff;
@@ -476,9 +510,6 @@ textarea.form-control {
 }
 .reviews-carousel {
 	position: relative;
-}
-.slick-arrow {
-	background-color: #fff;
 }
 .slick-dots {
 	display: none;
@@ -504,6 +535,49 @@ textarea.form-control {
 }
 .slick-dots li button {
 	display: none;
+}
+.slick-arrow {
+	position: absolute;
+	height: 100%; 
+	z-index: 1;
+	top: 0;
+	width: 90px;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+
+}
+.slick-arrow.slick-next {
+	right: 0;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background: #fff;
+	text-align: center;
+	line-height: 63px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -31px;
+}
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	top: 17px;
+	left: 14px;
 }
 /* ---- Reviews-carousel end ---- */
 
@@ -545,14 +619,35 @@ textarea.form-control {
 /* ---- Latest news end ---- */
 
 /* ---- Subscribe ---- */
-
-/* ---- Subscribe end ---- */
 .subscribe form .form-control {
 	max-width: 290px;
 }
 .subscribe .form-info {
 	margin-top: 17px;
 }
+/* ---- Subscribe end ---- */
+
+/* ---- Contacts ---- */
+.contact-item .contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item .contact-item-content span {
+	display: block;
+}
+.contact-item .contact-title {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: .3em;
+	font-size: 12px;
+}
+.contact-item-content .contact-data {
+	line-height: 24px;
+	color: #444;
+}
+
+/* ---- Contacts end ----  */
+
 /* ==== Custom styles end ==== */
 
 /* ---- Footer ---- */
@@ -562,5 +657,29 @@ textarea.form-control {
 .footer .footer-logo {
 	padding-top: 140px;
 	margin-bottom: 24px;
+}
+.footer-nav {
+	margin-bottom: 105px;
+}
+.footer-nav li + li {
+	margin-left: 13px;
+}
+.copyright {
+	padding-bottom: 60px;
+}
+.copyright span {
+	display: block;
+}
+.copyright .company {
+	letter-spacing: .5em;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	color: #111;
+}
+.copyright .tagline {
+	font-size: 11px;
+	color: #999;
+	line-height: 24px;
 }
 /* ---- Footer end ---- */
