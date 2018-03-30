@@ -32,11 +32,11 @@
         </div>
         <!-- / header-logo --> 
         <ul class="header-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" data-scroll=".inner">Home</a></li>
+          <li><a href="#" data-scroll=".about-studio">About</a></li>
+          <li><a href="#" data-scroll=".services">Services</a></li>
+          <li><a href="#" data-scroll=".portfolio">Works</a></li>
+          <li><a href="#" data-scroll=".contacts">Contact</a></li>
         </ul>
          <!-- /header-nav -->
       </div>
@@ -827,7 +827,20 @@
               </div>
               <!-- /contact items wrapper -->
               <form class="contact-form">
-
+                <div class="form-col">
+                  <input type="text" name="user-name" id="user-name" class="form-control" placeholder="name">
+                  <input type="email" name="user-email" id="user-email" class="form-control" placeholder="email">
+                </div>
+                <!-- / form-col -->
+                <div class="form-col">
+                  <textarea name="user-message" id="user-message" class="form-control" placeholder="message"></textarea>
+                </div>
+                <!-- / form-col -->
+                <div class="form-info">
+                  <span><i class="fa fa-info-circle pull-left"></i>All the fields are required</span>
+                </div>
+                <!-- / form-info -->
+                <button type="submit" class="btn btn-black pull-right">Submit message</button>
               </form>
               <!-- /contact form -->
             </div>
@@ -839,6 +852,28 @@
       </div>
       <!-- CONTACTS END -->
 
+      <!-- MAP START -->
+      <div class="map-container">
+        <div id="map"></div>
+        <div class="on-map-block text-center">
+          <div class="on-map-content">
+            <div class="map-icon">
+              <span class="rhomb-icon white-icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              </div>
+              <!-- / map icon -->
+            <div class="map-text font-dosis text-uppercase">
+              <span>Open the map</span>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <!-- / map text -->
+          </div>
+          <!-- / on map content -->
+        </div>
+        <!-- / on map block -->
+      </div>
+      <!-- MAP CONTAINER END -->
     </div>
     <!-- MAIN END -->
 
@@ -852,12 +887,30 @@
         <div class="footer-nav">
           <ul>
             <li class="rhomb-icon transparent-icon">
-              <i class="fa fa-facebook"></i>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
             </li>
-            <li class="rhomb-icon transparent-icon"><i class="fa fa-twitter"></i></li>
-            <li class="rhomb-icon transparent-icon"><i class="fa fa-behance"></i></li>
-            <li class="rhomb-icon transparent-icon"><i class="fa fa-linkedin"></i></li>
-            <li class="rhomb-icon transparent-icon"><i class="fa fa-pinterest"></i></li>
+            <li class="rhomb-icon transparent-icon">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="rhomb-icon transparent-icon">
+              <a href="#">
+                <i class="fa fa-behance"></i>
+              </a>
+            </li>
+            <li class="rhomb-icon transparent-icon">
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a> 
+            </li>
+            <li class="rhomb-icon transparent-icon">
+              <a href="#">
+                <i class="fa fa-pinterest"></i>
+              </a> 
+            </li>
           </ul>
         </div>
         <!-- / footer nav -->
@@ -869,6 +922,12 @@
       <!-- / container -->
     </div>
     <!-- FOOTER END -->
+
+    <!-- Arrow up -->
+    <div class="arrow-up">
+      <a href="#"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- Arrow up end -->
     
   </body>
 
@@ -878,8 +937,21 @@
   <!-- jQuery UI -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <!-- Init Google map -->
+ <script src="js/google-maps.js"></script>
+
+  <!-- Google map API -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrsslGi6eLV57MY7cAIdLtKKDF-j4fYxg&callback=initMap"
+ async defer></script>
+
   <!-- Plugins -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Show header on scroll -->
+ <script src="js/header-scroll.js"></script>
+
+ <!-- Scroll to -->
+ <script src="js/scroll-to.js"></script>
 
   <!-- Init plugins -->
   <script src="js/init.js"></script>
