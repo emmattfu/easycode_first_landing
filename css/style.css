@@ -91,34 +91,6 @@ blockquote {
 /* ==== Default classes end ==== */
 
 /* ==== Default components start ==== */
-.header {
-    position: absolute;
-    padding: 25px 0;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-    left: 0;
-}
-.header .header-logo {
-    float: left;
-}
-.header .header-nav {
-    float: right;
-    line-height: 25px;
-}
-.header .header-nav li {
-    float: left;
-    color: rgba(255, 255, 255, .75);
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    font-size: 11px;
-}
-.header .header-nav .first-li{
-    margin-right: 35px;
-}
-.header .header-nav li + li {
-    margin-left: 35px;
-}
 .default-section {
     padding: 135px 0;
 }
@@ -176,6 +148,11 @@ blockquote span,
     text-transform: uppercase;
     letter-spacing: .2em;
     margin-top: 40px;
+}
+@media (max-width: 991px) {
+    blockquote {
+        margin-bottom: 20px;
+    }
 }
 
 .btn {
@@ -307,6 +284,49 @@ textarea.form-control {
 /* ==== Guide styles end ==== */
 
 /* ==== Custom styles start ==== */
+
+/* ---- Header ---- */
+.header {
+    position: absolute;
+    padding: 25px 0;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+.header .header-logo {
+    float: left;
+}
+.header .header-nav {
+    float: right;
+    line-height: 25px;
+}
+.header .header-nav li {
+    float: left;
+    color: rgba(255, 255, 255, .75);
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 11px;
+}
+.header .header-nav .first-li{
+    margin-right: 35px;
+}
+.header .header-nav li + li {
+    margin-left: 35px;
+}
+.slicknav_menu {
+    display: none;
+}
+@media (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+}
+/* ---- Header end ---- */
+
 /* ---- Inner ---- */
 .inner {
     background: url('../img/inner-bg.jpg') no-repeat center / cover;
@@ -333,13 +353,13 @@ textarea.form-control {
     font-weight: 400;
     text-transform: uppercase;
     text-indent: 1.7em; 
+    margin-bottom: 100px;    
 }
 .inner .inner-text {
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
     font-size: 19px;
     color: rgba(255, 255, 255, .75);
-    margin-top: 100px;
     display: inline-block;
 }
 .inner-to-about-studio {
@@ -353,6 +373,19 @@ textarea.form-control {
     position: absolute;
     bottom: 10%;
     left: 45%;
+}
+@media (max-width: 991px) {
+    .inner h1 {
+        letter-spacing: .7em;
+        text-indent: .7em;
+        margin-bottom: 75px;
+    }
+}
+@media (max-width: 767px) {
+    .inner {
+        height: auto;
+        padding: 150px 0;
+    }
 }
 /* ---- Inner end ---- */
 
@@ -382,11 +415,12 @@ textarea.form-control {
 .team-item .team-item-info .team-item-role {
     font-size: 12px;
 }
+.team-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
 .team-item .team-item-img {
     position: relative;
-}
-.team-item-skills {
-    margin-right: -100px;
 }
 .team-item .team-item-skills {
     opacity: 0;
@@ -444,6 +478,69 @@ textarea.form-control {
 .team-item .team-item-img:hover .photography {
     width: 83%;
 }
+@media (max-width: 991px) {
+    .team-item .team-item-skills {
+        padding: 20px;
+    }
+    .team-item-skills .team-item-skills-title {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .team-item-skills .team-item-skills-content {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .skill-item .skill-name {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    .progress-wrapp {
+        height: 10px;
+    }
+    .team-item .team-item-info .team-item-name {
+        font-size: 12px;
+    }
+    .team-item .team-item-info .team-item-role {
+        font-size: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .team-item .team-item-img img {
+        width: 100%;
+    }
+    .team-item .team-item-skills {
+        padding: 40px;
+    }
+    .team-item-skills .team-item-skills-title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .team-item-skills .team-item-skills-content {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .skill-item .skill-name {
+        font-size: 15px;
+        line-height: 38px;
+    }
+    .progress-wrapp {
+        height: 18px;
+    }
+    .team-item .team-item-info .team-item-name {
+        font-size: 20px;
+    }
+    .team-item .team-item-info .team-item-role {
+        font-size: 15px;
+    }
+    .team-item .team-item-info {
+        margin-bottom: 20px;
+    }
+    .about-studio-content .col-sm-12 + .col-sm-12 {
+        margin-top: 20px;
+    }
+}
 /* ---- About studio end ---- */
 
 /* ---- Services ---- */
@@ -475,6 +572,27 @@ textarea.form-control {
 .tabs-nav li span + span {
     margin-top: 20px;
 }
+@media (max-width: 991px) {
+    .tabs-nav {
+        margin-bottom: 45px;
+    }
+    .tabs-nav-name {
+        font-size: 12px;
+        letter-spacing: .3em;
+    }
+}
+@media (max-width: 767px) {
+    .tabs-nav {
+        margin-bottom: 25px;
+    }
+    #tabs .tabs-nav li {
+        width: 33.3333%;
+        margin-bottom: 25px;
+    }
+    .tabs-wrapper .col-sm-12 + .col-sm-12 {
+        margin-top: 20px;
+    }
+}
 /* ---- Services end ---- */
 
 /* ---- Lets talk ---- */
@@ -495,6 +613,12 @@ textarea.form-control {
     color: #111;
     padding-left: 40px;
     padding-right: 40px;
+}
+@media (max-width: 991px) {
+    .lets-talk-content {
+        padding: 70px 0;
+        text-align: center;
+    }
 }
 /* ---- Lets talk end ---- */
 
@@ -539,6 +663,18 @@ textarea.form-control {
 .portfolio-item img:hover {
     filter: grayscale(0);
 }
+@media (max-width: 767px) {
+    #portfolio-tabs .portfolio-tabs-nav li + li {
+        margin-left: 0;
+    }
+    #portfolio-tabs .portfolio-tabs-nav li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+}
 /* ---- Portfolio end ---- */
 
 /* ---- Creative works ---- */
@@ -559,6 +695,15 @@ textarea.form-control {
 }
 .et-line-wrapper {
     margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+    .causes .cause-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .causes .row + .row {
+        margin-top: 0;
+    }
 }
 /* ---- Why choose us end ---- */
 
@@ -657,6 +802,20 @@ textarea.form-control {
     top: 17px;
     left: 14px;
 }
+@media (max-width: 991px) {
+    .reviews-content .reviews-text {
+        max-width: 650px;
+    }
+    .reviews-carousel {
+        padding-top: 110px;
+    }
+}
+@media (max-width: 767px) {
+    .reviews-content .reviews-text {
+        font-size: 14px;
+        max-width: 500px;
+    }
+}
 /* ---- Reviews-carousel end ---- */
 
 /* ---- Latest news ---- */
@@ -693,6 +852,16 @@ textarea.form-control {
     color: #999999;
     letter-spacing: .4em;
     line-height: 35px;
+}
+@media (max-width: 991px) {
+    .news-img img {
+        width: 100%;
+    }
+    .news-wrapper {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #777;
+    }
 }
 /* ---- Latest news end ---- */
 
@@ -749,6 +918,21 @@ textarea.form-control {
     padding: 0 5px;
     margin-top: 20px;
     width: 100%;
+}
+@media (max-width: 767px) {
+    .contact-items-wrapper {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .contact-items-wrapper .col-sm-12 + .col-sm-12 {
+        margin-top: 20px;
+    }
+    .contact-form .form-col {
+        width: 100%;
+    }
+    .contact-form .form-col + .form-col {
+        margin-top: 10px;
+    }
 }
 /* ---- Contacts end ----  */
 
@@ -827,4 +1011,4 @@ textarea.form-control {
     color: #999;
     line-height: 24px;
 }
-/* ---- Footer end ---- */
+/* ---- Footer end ---- */ 
