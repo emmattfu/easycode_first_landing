@@ -94,6 +94,11 @@ blockquote {
 .default-section {
     padding: 135px 0;
 }
+@media (max-width: 576px) {
+    .default-section {
+        padding: 110px 0;
+    }
+}
 .small-section {
     padding: 70px 0;
 }
@@ -129,6 +134,11 @@ blockquote {
     font-size: 14px;
     letter-spacing: .4em;
     margin-bottom: 35px;
+}
+@media (max-width: 576px) {
+    .title.section-title {
+    margin-bottom: 45px;
+    } 
 }
 .default-text {
     font-size: 15px;
@@ -324,6 +334,9 @@ textarea.form-control {
     .header-nav {
         display: none;
     }
+    .header-logo {
+        line-height: 48px;
+    }
 }
 /* ---- Header end ---- */
 
@@ -385,6 +398,15 @@ textarea.form-control {
     .inner {
         height: auto;
         padding: 150px 0;
+    }
+}
+@media (max-width: 576px) {
+    .inner h1 {
+        letter-spacing: .3em;
+        font-size: 25px;
+    }
+    .inner .inner-text {
+        font-size: 16px;
     }
 }
 /* ---- Inner end ---- */
@@ -541,6 +563,24 @@ textarea.form-control {
         margin-top: 20px;
     }
 }
+@media (max-width: 576px) {
+    .team-item .team-item-skills {
+        padding: 40px;
+    }
+    .team-item-skills .team-item-skills-title {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .team-item-skills .team-item-skills-content {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .skill-item .skill-name {
+        font-size: 9px;
+        line-height: 20px;
+    }
+}
 /* ---- About studio end ---- */
 
 /* ---- Services ---- */
@@ -628,7 +668,7 @@ textarea.form-control {
     padding-bottom: 7px;
     position: relative; 
 }
-.portfolio-content p {
+.portfolio-content {
     max-width: 760px;
     margin: auto;
     margin-bottom: 85px;
@@ -673,6 +713,11 @@ textarea.form-control {
     }
     .portfolio-item {
         width: 100%;
+    }
+    @media (max-width: 767px) {
+        .portfolio-content {
+            margin-bottom: 55px;
+        }
     }
 }
 /* ---- Portfolio end ---- */
@@ -816,6 +861,12 @@ textarea.form-control {
         max-width: 500px;
     }
 }
+@media (max-width: 576px) {
+    .reviews-content .reviews-text {
+        font-size: 12px;
+        max-width: 250px;
+    }
+}
 /* ---- Reviews-carousel end ---- */
 
 /* ---- Latest news ---- */
@@ -863,6 +914,11 @@ textarea.form-control {
         border-bottom: 2px solid #777;
     }
 }
+@media (max-width: 576px) {
+    .latest-news .blog {
+        line-height: 55px;
+    }
+}
 /* ---- Latest news end ---- */
 
 /* ---- Subscribe ---- */
@@ -871,6 +927,11 @@ textarea.form-control {
 }
 .subscribe .form-info {
     margin-top: 17px;
+}
+@media (max-width: 576px) {
+    .subscribe form button {
+        width: 100%;
+    }
 }
 /* ---- Subscribe end ---- */
 
@@ -922,7 +983,7 @@ textarea.form-control {
 @media (max-width: 767px) {
     .contact-items-wrapper {
         margin-bottom: 40px;
-        text-align: center;
+        text-align: left;
     }
     .contact-items-wrapper .col-sm-12 + .col-sm-12 {
         margin-top: 20px;
@@ -932,6 +993,14 @@ textarea.form-control {
     }
     .contact-form .form-col + .form-col {
         margin-top: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .contact-items-wrapper {
+        text-align: left;
+    }
+    .contact-form .form-submit button {
+        width: 100%;
     }
 }
 /* ---- Contacts end ----  */
