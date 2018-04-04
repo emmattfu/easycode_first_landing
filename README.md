@@ -16,7 +16,7 @@ README.md       | Файл с описанием проекта
 ### Используемые библиотеки и и ресурсы
 
 * et-line icon font
-* font=awesome
+* font-awesome
 * Google fonts
 * lightbox2
 * Google map API
@@ -27,11 +27,16 @@ README.md       | Файл с описанием проекта
 
 Для более удобного использования данного шаблона был создан гайдлайн под названием guide.html. В нем описаны стандартные классы и компоненты такие как:
 
-Название          | Описание
-------------------| --------------
-Default section   | Стандартная секция .default-section
-                    Стандартный заголовок .section-title
-                    Заголовок с уменьшеным расстоянием между буквами и толщиной букв .section-title-light
-                    Примеры выравнивания текста .text-center и .text-right
-Small section     | Стандартная маленькая секция .small-section 
+1. Default section:
+  * Стандартная секция .default-section
+  * Стандартный заголовок .section-title
+  * Заголовок с уменьшеным расстоянием между буквами и толщиной букв .section-title-light
+  * Примеры выравнивания текста .text-center и .text-right
+2. Small section:      
+  * Стандартная маленькая секция .small-section
+  * Черный фон .bg-black
+3. Default text and blockquote:
+  * Стандартный текс .default-text
+  * Цитата <blockquote class="blockquote"></blockquote>
+
                     
