@@ -173,6 +173,7 @@ blockquote span,
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: .2em;
 }
 
 .btn.btn-default {
@@ -646,14 +647,14 @@ textarea.form-control {
 .lets-talk .lets-talk-img {
     margin-top: -32px;
 }
-.lets-talk-content .btn-default {
+/* .lets-talk-content .btn-default {
     background-color: rgba(255, 255, 255, .8);
     font-size: 14px;
     letter-spacing: .2em;
     color: #111;
     padding-left: 40px;
     padding-right: 40px;
-}
+} */
 @media (max-width: 991px) {
     .lets-talk-content {
         padding: 70px 0;
@@ -673,6 +674,9 @@ textarea.form-control {
     margin: auto;
     margin-bottom: 85px;
 }
+#portfolio-tabs .portfolio-tabs-nav {
+    margin-bottom: 50px;
+}
 .portfolio-tabs-nav li {
     display: inline-block;
 }
@@ -683,7 +687,6 @@ textarea.form-control {
     letter-spacing: .4em;
     color: #111;
     opacity: .5;
-    margin-bottom: 50px;
 } 
 #portfolio-tabs .portfolio-tabs-nav li + li {
     margin-left: 67px;
@@ -706,10 +709,10 @@ textarea.form-control {
 @media (max-width: 767px) {
     #portfolio-tabs .portfolio-tabs-nav li + li {
         margin-left: 0;
+        margin-top: 20px;
     }
     #portfolio-tabs .portfolio-tabs-nav li {
         width: 100%;
-        margin-bottom: 20px;
     }
     .portfolio-item {
         width: 100%;
@@ -723,14 +726,14 @@ textarea.form-control {
 /* ---- Portfolio end ---- */
 
 /* ---- Creative works ---- */
-.creative-works .btn-default {
+/* .creative-works .btn-default {
     background-color: rgba(255, 255, 255, .8);
     font-size: 14px;
     letter-spacing: .2em;
     color: #111;
     padding-left: 40px;
     padding-right: 40px;
-}
+} */
 /* ---- Creative works end ---- */
 
 
@@ -879,6 +882,7 @@ textarea.form-control {
     font-size: 15px;
     letter-spacing: .2em;
     margin-bottom: 17px;
+    display: block;
 }
 .news-author {
     font-size: 11px;
@@ -892,6 +896,7 @@ textarea.form-control {
 .news-img {
     filter: grayscale(100%);
     margin-bottom: 30px;
+    display: block;
 }
 .news-img:hover {
     filter: grayscale(0);
@@ -903,6 +908,9 @@ textarea.form-control {
     color: #999999;
     letter-spacing: .4em;
     line-height: 35px;
+}
+.news-wrapper button {
+    letter-spacing: .2em;
 }
 @media (max-width: 991px) {
     .news-img img {
