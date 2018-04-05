@@ -541,7 +541,7 @@ textarea.form-control {
     }
     .team-item-skills .team-item-skills-content {
         margin-bottom: 40px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 25px;
     }
     .skill-item .skill-name {
@@ -565,6 +565,27 @@ textarea.form-control {
     }
 }
 @media (max-width: 576px) {
+    .team-item-skills .team-item-skills-title {
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+    .team-item-skills .team-item-skills-content {
+        margin-bottom: 40px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .skill-item .skill-name {
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .progress-wrapp {
+        height: 15px;
+    }
+    .progress-wrapp .progress {
+        height: 15px;
+    }
+}
+@media (max-width: 479px) {
     .team-item .team-item-skills {
         padding: 40px;
     }
@@ -661,6 +682,11 @@ textarea.form-control {
         text-align: center;
     }
 }
+@media (max-width: 576px) {
+    .lets-talk-content button {
+        width: 100%;
+    }
+}
 /* ---- Lets talk end ---- */
 
 /* ---- Portfolio ----- */
@@ -706,6 +732,14 @@ textarea.form-control {
 .portfolio-item img:hover {
     filter: grayscale(0);
 }
+@media (max-width: 991px) {
+    .portfolio-items .portfolio-item-3 {
+        margin-bottom: -3px;
+    }
+    .portfolio-item {
+        width: 50%;
+    }
+}
 @media (max-width: 767px) {
     #portfolio-tabs .portfolio-tabs-nav li + li {
         margin-left: 0;
@@ -717,7 +751,7 @@ textarea.form-control {
     .portfolio-item {
         width: 100%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 576px) {
         .portfolio-content {
             margin-bottom: 55px;
         }
@@ -734,6 +768,11 @@ textarea.form-control {
     padding-left: 40px;
     padding-right: 40px;
 } */
+@media (max-width: 576px) {
+    .creative-works button {
+        width: 100%;
+    }
+}
 /* ---- Creative works end ---- */
 
 
