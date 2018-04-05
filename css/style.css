@@ -88,6 +88,9 @@ blockquote {
 .pull-right {
     float: right;
 }
+.font-dosis {
+    font-family: 'Dosis';
+}
 /* ==== Default classes end ==== */
 
 /* ==== Default components start ==== */
@@ -235,9 +238,6 @@ textarea.form-control {
     font-size: 48px;
     color: #111;
     text-align: center;
-}
-.font-dosis {
-    font-family: 'Dosis';
 }
 .form-info {
     font-size: 11px;
