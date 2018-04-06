@@ -239,14 +239,6 @@ textarea.form-control {
     color: #111;
     text-align: center;
 }
-.form-info {
-    font-size: 11px;
-    color: #aaa;
-    font-weight: 400;
-}
-.form-info .fa {
-    font-size: 12px;
-}
 .rhomb-icon {
     display: inline-block;
     width: 23px;
@@ -974,6 +966,14 @@ textarea.form-control {
 }
 .subscribe .form-info {
     margin-top: 17px;
+}
+.form-info {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 400;
+}
+.form-info .fa {
+    font-size: 12px;
 }
 @media (max-width: 576px) {
     .subscribe form button {
